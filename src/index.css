@@ -1,6 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  font-family: 'Montserrat', sans-serif;
+}
+/* navbar section */
+.newNav {
+  padding: 0 20%;
+}
+.newNav a {
+  font-size: 22px;
 }
