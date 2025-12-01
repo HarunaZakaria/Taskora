@@ -1,9 +1,12 @@
 import './App.css';
+import Header from './Components/Header';
 
 function App() {
   return (
     <>
-      <h1>Taskora</h1>
+      <header>
+        <Header />
+      </header>
     </>
   );
 }
