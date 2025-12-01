@@ -21,7 +21,7 @@ const Header = () => {
         </p>
         <div className="progress">
           <div
-            class="progress-bar"
+            className="progress-bar"
             role="progressbar"
             aria-valuenow="0"
             aria-valuemin="0"
@@ -30,8 +30,10 @@ const Header = () => {
         </div>
         <p>0% completed</p>
         <p>Points: 0 | Streak: 0🔥</p>
-        <button className='btn btn-primary add-btn'>Add Tasks</button>
-        <button className='btn btn-primary add-btn'>View Tasks</button>
+        <div className="btns">
+          <button className="btn btn-primary add-btn">Add Tasks</button>
+          <button className="btn btn-primary add-btn">View Tasks</button>
+        </div>
       </div>
     </div>
   );
