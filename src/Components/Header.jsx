@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary ">
+        <div className="container-fluid newNav">
           <a className="navbar-brand" href="#">
             Taskora
           </a>
@@ -28,12 +28,12 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Done Tasks
+                  Completed
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Add Tasks
+                  Add
                 </a>
               </li>
             </ul>
