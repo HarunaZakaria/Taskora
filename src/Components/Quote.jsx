@@ -51,7 +51,7 @@ const quotes = [
   },
   {
     id: 10,
-    text: 'Continue to grow and learn.',
+    text: 'Doubt kills more dreams than failure ever will.',
     icon: '👊',
   },
 ];

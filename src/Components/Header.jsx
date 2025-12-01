@@ -14,7 +14,25 @@ const Header = () => {
   return (
     <div>
       <Navbar />
-      <h1>{greet}</h1>
+      <div className="header">
+        <h1 className="heading">{greet}</h1>
+        <p>
+          Continue to grow and learn. <span>🚴‍♂️</span>
+        </p>
+        <div className="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <p>0% completed</p>
+        <p>Points: 0 | Streak: 0🔥</p>
+        <button className='btn btn-primary add-btn'>Add Tasks</button>
+        <button className='btn btn-primary add-btn'>View Tasks</button>
+      </div>
     </div>
   );
 };
