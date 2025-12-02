@@ -8,6 +8,9 @@
 .newNav {
   padding: 0 20%;
 }
+.nav-link {
+  color: #950ccc;
+}
 .newNav a {
   font-size: 22px;
 }
