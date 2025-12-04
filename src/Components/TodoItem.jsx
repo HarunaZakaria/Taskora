@@ -2,7 +2,10 @@ import React from 'react';
 
 export default function TodoItem({ todo, onToggle, onDelete }) {
   return (
-    <li style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+    <li
+      style={{ display: 'flex', alignItems: 'center', gap: 10 }}
+      className="tasks"
+    >
       <input
         type="checkbox"
         checked={todo.completed}
@@ -19,8 +22,9 @@ export default function TodoItem({ todo, onToggle, onDelete }) {
       <button
         onClick={() => onDelete(todo.id)}
         aria-label={`Delete ${todo.text}`}
+        className="delete-btn"
       >
-        Delete
+        <i class="ph ph-trash"></i>
       </button>
     </li>
   );

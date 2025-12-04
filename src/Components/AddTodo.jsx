@@ -12,14 +12,18 @@ export default function AddTodo({ onAdd }) {
   }
 
   return (
-    <form onSubmit={submit} style={{ display: 'flex', gap: 8 }}>
+  <div className="form-container">
+     <form onSubmit={submit} style={{ display: 'flex', gap: 10 }}>
       <input
         aria-label="New todo"
         placeholder="Add new todo..."
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button type="submit">Add</button>
+      <button type="submit" className="btn btn-primary">
+        Add
+      </button>
     </form>
+  </div>
   );
 }
