@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import useLocalStorage from './hooks/useLocalStorage';
 import AddTodo from './Components/AddTodo';
+import Header from './Components/Header';
 import TodoList from './Components/TodoList';
 export default function App() {
   const [todos, setTodos] = useLocalStorage('todos', []);
@@ -27,10 +28,15 @@ export default function App() {
   }
 
   return (
-    <main className="main">
-      <h1>Taskora</h1>
-      <AddTodo onAdd={addTodo} />
-      <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo} />
-    </main>
+    <div>
+      <header>
+        <Header />
+      </header>
+      <main className="main">
+        <h3 className='mt-3'>Add Task</h3>
+        <AddTodo onAdd={addTodo} />
+        <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo} />
+      </main>
+    </div>
   );
 }
