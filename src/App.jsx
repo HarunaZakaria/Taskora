@@ -27,8 +27,8 @@ export default function App() {
   }
 
   return (
-    <main style={{ maxWidth: 600, margin: '40px auto', padding: 16 }}>
-      <h1>To-Do App</h1>
+    <main className="main">
+      <h1>Taskora</h1>
       <AddTodo onAdd={addTodo} />
       <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo} />
     </main>
