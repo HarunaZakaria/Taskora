@@ -24,7 +24,7 @@ export default function TodoItem({ todo, onToggle, onDelete }) {
         aria-label={`Delete ${todo.text}`}
         className="delete-btn"
       >
-        <i class="ph ph-trash"></i>
+        <i className="ph ph-trash"></i>
       </button>
     </li>
   );
