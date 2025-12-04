@@ -15,8 +15,8 @@ const Header = () => {
     <div>
       <Navbar />
       <div className="header">
-        <h1 className="heading">{greet}</h1>
-        <p>
+        <h1 className="heading text-center">{greet}</h1>
+        {/* <p>
           Continue to grow and learn. <span>🚴‍♂️</span>
         </p>
         <div className="progress">
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="btns">
           <button className="btn btn-primary add-btn">Add Tasks</button>
           <button className="btn btn-primary add-btn">View Tasks</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
